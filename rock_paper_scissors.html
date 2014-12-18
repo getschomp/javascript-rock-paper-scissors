@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>JavaScript Hello World</title>
+</head>
+<body>
+  <h1>JavaScript Rock Paper Scissors</h1>
+  <script>
+  document.write("Welcome to Rock, Paper, Scissors \n")
+  var turn = function() {
+    var choice1 = prompt("Welcome to Rock, Paper, Scissors \n" +
+    "Player Score: 0, Computer Score: 0 \n" +
+    "Choose rock (r), paper (p), or scissors (s):")
+    /* and end with */
+    var choice2 = Math.round(Math.random()*3);
+    if (choice2 === 1){
+        choice2 = "r";
+    }
+    if (choice2 === 1){
+      choice2 = "p";
+    }
+    if (choice2 === 1){
+      choice2 = "s";
+    }
+    choice2 = "r"
+    var computerScore = 0;
+    var playerScore = 0;
+
+    if (choice1 === choice2){
+      document.write(<p>"tie, choose again"</p>);
+      computerScore = computerScore + 1;
+    }
+    /*
+    if (choice1 === "p"){
+        if (choice2 === "r"){
+          document.write("paper beats rock, player wins the round");
+        } else{
+        if (choice2 === "s"){
+          document.write("sissors beats paper, computer wins the round");
+        }
+      }
+
+      if (choice1 === "s"){
+        if (choice2 === "r"){
+          document.write("Rock beats scissors, computers wins the round");
+        } else{
+          if (choice2 === "p"){
+            document.write("your - sissors wins");
+          }
+      }
+
+        if (choice1 === "r"){
+          if (choice2 === "s"){
+            document.write("your - rock wins");
+          } else{
+            if (choice2 === "p"){
+              document.write("computers - paper wins");
+            }
+            }
+        }*/
+        document.write("<p>turn end</p>");
+        document.write("<p> Player Score:" + playerScore + ", Computer Score:" + computerScore + "<p>");
+  }
+
+  turn()
+  </script>
+</body>
+</html>
